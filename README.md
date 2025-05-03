@@ -1,6 +1,6 @@
 # Promptly 🌅
 
-**Send fun, warm "Good Morning/ Custom Prompted" messages with beautiful images to your loved ones via WhatsApp—automatically, every day.**
+**Send fun, warm "Custom Prompted" messages with beautiful images to your loved ones via WhatsApp—automatically, every day.**
 
 ## ✨ Features
 
