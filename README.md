@@ -1,69 +1,84 @@
-Promptly
-A bot that sends **fun, warm "Good Morning / Custom Prompted" messages** with images to your loved ones via WhatsApp—automatically, every day. Never forget to check in again 😉
+# Promptly 🌅
 
-🚀 Features
-* 📸 Fetches random images from Unsplash
-* 💬 Sends scheduled messages via WhatsApp
-* 📝 Logs events and errors
-* ⚙️ Fully customizable messages, timing, and images
+**Send fun, warm "Good Morning/ Custom Prompted" messages with beautiful images to your loved ones via WhatsApp—automatically, every day.**
 
-🧰 Tech Stack
-* **Python** – Core logic
-* **Unsplash API** – Image fetching
-* **PyWhatKit** – WhatsApp automation
-* **Schedule** – Task scheduler
+## ✨ Features
 
-⚙️ Setup & Usage
-1. Clone & Install
+- 📸 **Fetch Beautiful Images**: Random high-quality images from Unsplash
+- 💬 **Automated Messaging**: Send scheduled messages via WhatsApp
+- 📝 **Comprehensive Logging**: Track events and errors
+- ⚙️ **Full Customization**: Personalize messages, timing, and images
 
+## 🛠️ Tech Stack
+
+- **Python**: Core application logic
+- **Unsplash API**: For fetching beautiful images
+- **PyWhatKit**: WhatsApp automation
+- **Schedule**: Task scheduling
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.6+
+- WhatsApp Web access
+- Unsplash API key
+
+### Installation
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/itsmeved24/Promptly.git  
-cd Promptly  
-pip install -r requirements.txt  
+git clone https://github.com/itsmeved24/Promptly.git
+cd Promptly
 ```
 
-2. Configure `.env`
-Create a `.env` file in the root directory:
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
+3. Create a `.env` file:
 ```
 PHONE_NUMBER=+911234567890
 UNSPLASH_API_KEY=your_unsplash_api_key_here
 ```
 
-3. Run
-
+4. Run the application:
 ```bash
 python main.py
 ```
 
-🔧 Customization
-* **Change message text** → Edit in `main.py`
-* **Use different image keywords** → Edit `image_fetcher.py`
-* **Adjust time** → `schedule.every().day.at("HH:MM")` in `main.py`
-* **Use personal images** → Drop them into `images/` and modify logic
+## ⚙️ Customization
 
-🪵 Logging
-Logs (`image_fetcher.log`) include:
-* Fetch timestamps
-* Success/failure messages
-* Image URLs & query terms
-* Errors & exceptions
-* Debug info
+- **Message Text**: Edit message templates in `main.py`
+- **Image Categories**: Modify keywords in `image_fetcher.py`
+- **Scheduling**: Adjust timing with `schedule.every().day.at("HH:MM")` in `main.py`
+- **Custom Images**: Add personal images to `images/` directory
 
-📁 Structure
+## 📋 Project Structure
+
 ```
 .
-├── images/
-├── .env
-├── image_fetcher.py
-├── main.py
-├── image_fetcher.log
-├── requirements.txt
-...
+├── images/               # Directory for storing images
+├── .env                  # Environment variables
+├── image_fetcher.py      # Image fetching module
+├── main.py               # Core application file
+├── image_fetcher.log     # Logs for debugging
+├── requirements.txt      # Dependencies
+└── README.md             # This file
 ```
 
-🤝 Contribute
-Pull requests are welcome!
+## 📊 Logging
 
-📄 License
-MIT
+The application creates detailed logs (`image_fetcher.log`) that include:
+- Timestamps for each operation
+- Success/failure status
+- Image URLs and query terms
+- Detailed error information
+- Debug information
+
+## Made with ❤️ by Vedank
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
