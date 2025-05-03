@@ -1,0 +1,23 @@
+# Ignore environment variables
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc*.pyo
+*.pyd
+
+# Ignore log files
+*.log
+
+# Ignore virtual environments (if using venv)
+venv/
+
+# Ignore PyWhatKit database file
+PyWhatKit_DB.txt
+
+
+# Ignore downloaded images
+images/
+
+# Ignore Visual Studio Code settings folder
+.vscode/  
