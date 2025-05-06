@@ -2,3 +2,4 @@ schedule
 pywhatkit
 requests
 pyautogui
+python-dotenv

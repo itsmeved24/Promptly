@@ -115,7 +115,7 @@ def send_good_morning():
         log_and_print("Failed to fetch the image URL. Check API/network.", "error")
 
 # Schedule the message according to the daily routines
-schedule.every().day.at("03:33").do(send_good_morning)  # Modfiy the timings (24-hour format)
+schedule.every().day.at("23:01").do(send_good_morning)  # Modfiy the timings (24-hour format)
 
 log_and_print("Scheduler started...")
 

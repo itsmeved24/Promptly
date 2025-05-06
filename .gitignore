@@ -1,23 +1,58 @@
-# Ignore environment variables
+# Environment variables and secrets
 .env
+.env.*
+*.key
+*.pem
+*.cert
+*.password
+*.secret
 
-# Ignore Python cache files
+# Python cache files
 __pycache__/
-*.pyc*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
 
-# Ignore log files
-*.log
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+promptly_whatsapp.egg-info/
 
-# Ignore virtual environments (if using venv)
+# Virtual environments
 venv/
+env/
+ENV/
+.venv
 
-# Ignore PyWhatKit database file
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.settings/
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+*.db
 PyWhatKit_DB.txt
 
+# Local development
+*.local
+.DS_Store
+Thumbs.db
 
-# Ignore downloaded images
+# Test coverage
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Downloaded/generated content
 images/
-
-# Ignore Visual Studio Code settings folder
-.vscode/  
+downloads/
+temp/

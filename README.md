@@ -25,6 +25,13 @@
 
 ### Installation
 
+You can either install the package from PyPI or clone the repository:
+
+#### Option 1: Install from PyPI (for users)
+```bash
+pip install promptly-whatsapp
+```
+#### Option 2: Clone the Repository
 1. Clone the repository:
 ```bash
 git clone https://github.com/itsmeved24/Promptly.git
@@ -58,13 +65,15 @@ python main.py
 
 ```
 .
-├── images/               # Directory for storing images
-├── .env                  # Environment variables
-├── image_fetcher.py      # Image fetching module
-├── main.py               # Core application file
-├── image_fetcher.log     # Logs for debugging
-├── requirements.txt      # Dependencies
-└── README.md             # This file
+├── promptly/                # Main package directory
+│   ├── __init__.py          # Package initialization
+│   ├── image_fetcher.py     # Image fetching module
+│   └── main.py              # Core application file
+├── dist/                    # Distribution files
+├── .env                     # Environment variables
+├── README.md                # Documentation
+├── requirements.txt         # Dependencies
+└── setup.py                 # Package configuration
 ```
 
 ## 📊 Logging
